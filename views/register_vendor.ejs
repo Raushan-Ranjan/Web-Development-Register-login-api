@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <style>
+      body {
+  background-color: rgba(223, 153, 24, 0.788);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.head {
+  text-align: center;
+}
+
+.container {
+  border-radius: 3px;
+  padding: 10px 0px;
+}
+
+input,
+.btn {
+  left: 25%;
+  width: 100%;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  padding: 20px;
+  line-height: 20px;
+  margin: 10px 0px;
+  display: inline-block;
+  border-bottom: 2px solid gray;
+}
+
+.wrap {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+}
+
+.upload {
+  border: none;
+  padding-bottom: 0;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.Already{
+  border: none;
+  
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container>">
+      <form action="/vendor/registration"  method="POST" >
+      
+         <div class="head">
+           <img src="/images/Login.png" alt="Vender image">
+           <h2>Register as Vendor</h2>
+         </div>
+
+          <div class="wrap">
+            <!-- <input type="text" name="UserName" placeholder="Enter UserName" /> -->
+            <input
+              type="text"
+              name="Companyname"
+              placeholder="Enter Company Name"
+            />
+            <input
+              type="text"
+              name="Registrationnumber"
+              placeholder="Enter Company Registration Number"
+            />
+            <input
+              type="text"
+              name="Address"
+              placeholder="Enter Address"
+              required
+            />
+            <input
+              type="text"
+              name="State"
+              placeholder="Enter State Name"
+              required
+            />
+            <input
+              type="text"
+              name="City"
+              placeholder="Enter City Name"
+              required
+            />
+            <input
+              type="text"
+              name="Pincode"
+              placeholder="Enter Pincode"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Email Id"
+              required
+            />
+
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter Password"
+              required
+            />
+
+            <input
+              type="text"
+              name="mobile"
+              placeholder="Enter Mobile Number"
+              required
+            />
+           
+            
+            <input
+              type="submit"
+              value="Register"
+              style="background-color: green; color: honeydew;"
+            />
+          
+          <a href="/vendor/login" class="btn Already" target="_self">Already a Member? LogIn Here! </a>
+      </form>
+
+    
+      </div>
+    </div>
+
+   
+  </body>
+</html>

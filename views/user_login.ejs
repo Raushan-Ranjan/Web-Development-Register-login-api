@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <style>
+      body {
+  background-color: rgba(223, 153, 24, 0.788);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.head {
+  text-align: center;
+}
+
+.container {
+  border-radius: 3px;
+  padding: 10px 0px;
+}
+
+input,
+.btn,a {
+  left: 25%;
+  width: 100%;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  padding: 20px;
+  line-height: 20px;
+  margin: 10px 0px;
+  display: inline-block;
+  border-bottom: 2px solid gray;
+}
+
+.wrap {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+}
+
+.upload {
+  border: none;
+  padding-bottom: 0;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+a{
+    text-align: center;
+    border: none;
+    background-color: rgba(100, 148, 237, 0.5);
+    font-size: 20px;
+    color: rgb(158, 30, 30);
+}
+
+.email {
+        background-color: rgba(220, 20, 130, 0.733);
+        color: black;
+      }
+
+      .twitter {
+        background-color: green;
+        color: white;
+      }
+
+      .google {
+        background-color: rgba(245, 12, 12, 0.815);
+        color: white;
+      }
+
+      .fb {
+        background-color: rgba(0, 0, 255, 0.596);
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container>">
+      <form action="/vendor/login"  method="POST" >
+      
+         <div class="head">
+           <img src="/images/object 3.png" alt="Vender image">
+           <h2>Login By Mobile Number</h2>
+         </div>
+
+          <div class="wrap">
+            <input type="text" name="mobile" placeholder="Enter Mobile Number" onclick="/user/login"/>
+          
+           
+            <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            required
+          />
+
+            <input
+              type="submit"
+              value="LOGIN"
+              style="background-color: green; color: honeydew;"
+            />
+
+            <hr>
+          <a href="#" class="email btn">
+            <i class="fa fa-envelope"></i>
+            LOGIN WITH EMAIL
+          </a>
+
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook"></i> LOGIN WITH FACEBOOK
+          </a>
+
+          <a href="#" class="google btn">
+            <i class="fa fa-google fa-fw"></i> LOGIN WITH GOOGLE
+          </a>
+
+            <a href="/user/registration">New User? Register Here</a>
+
+            <a href="#">Forget Password?</a>
+          
+  
+      </form>
+
+    
+      </div>
+    </div>
+
+   
+  </body>
+</html>
